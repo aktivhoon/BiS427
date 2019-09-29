@@ -1,0 +1,280 @@
+<!DOCTYPE html><html>
+<head>
+<title>7.3 Interval distribution and coefficient of variation | Neuronal Dynamics online book</title>
+<!--Generated on Mon Sep  8 19:44:32 2014 by LaTeXML (version v0.8.0) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on .-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="Ch7.html" title="Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="up up" href="Pt2.html" title="Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="up up up" href="." title="Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="start" href="." title="Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="prev" href="Ch7.S2.html" title="7.2 Mean Firing Rate ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="next" href="Ch7.S4.html" title="7.4 Autocorrelation function and noise spectrum ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S1.html" title="7.1 Spike train variability ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S2.html" title="7.2 Mean Firing Rate ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S4.html" title="7.4 Autocorrelation function and noise spectrum ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S5.html" title="7.5 Renewal statistics ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S6.html" title="7.6 The Problem of Neural Coding ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="section" href="Ch7.S7.html" title="7.7 Summary ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 Nonlinear Integrate-and-Fire Models ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Adaptation and Firing Patterns ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch8.html" title="Chapter 8 Noisy Input Models: Barrage of Spike Arrivals ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch9.html" title="Chapter 9 Noisy Output: Escape Rate and Soft Threshold ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch10.html" title="Chapter 10 Estimating Parameters of Probabilistic Neuron Models ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="chapter" href="Ch11.html" title="Chapter 11 Encoding and Decoding with Stochastic Neuron models ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="part" href="Pt1.html" title="Part I Foundations of Neuronal Dynamics ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="part" href="Pt2.html" title="Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="part" href="Pt3.html" title="Part III Networks of Neurons and Population Activity ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="part" href="Pt4.html" title="Part IV Dynamics of Cognition ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="bibliography" href="bib.html" title="Bibliography ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<link rel="index" href="idx.html" title="Index ‣ Neuronal Dynamics – From Single Neurons to Networks and Models of Cognition">
+<meta name="keywords" lang="en-us" content="
+                  , 
+                  , coefficient of variation, firing rate, interspike interval">
+<meta name="description" content="Freely available online version of the computational neuroscience book &quot;Neuronal Dynamics&quot; written by Wulfram Gerstner, Werner M. Kistler, Richard Naud and Liam Paninski. Visit us for teaching materials, online lectures and more.">
+<meta name="robots" content="index,follow">
+<meta name="copyright" content="Copyright © Cambridge University Press 2014">
+<meta name="author" content="Wulfram Gerstner">
+<meta name="language" content="english">
+<meta name="revisit-after" content="10">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+<link rel="stylesheet" href="../css/bootswatch.min.css">
+<link rel="stylesheet" href="../css/stickyfooter.css">
+<link rel="stylesheet" href="../css/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="../css/ltx-book.css" type="text/css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script><script src="../js/bootstrap.min.js"></script><script src="../js/bootswatch.js"></script><link rel="icon" type="image/png" href="../img/icon.png">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-393083-13', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body>
+<div class="container">
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch7.html" title="Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>Variability of Spike Trains and Neural Codes</span></a><a href="Ch7.S2.html" title="7.2 Mean Firing Rate ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.2 </span>Mean Firing Rate</span></a><a href="Ch7.S4.html" title="7.4 Autocorrelation function and noise spectrum ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.4 </span>Autocorrelation function and noise spectrum</span></a>
+</div></header><div class="navbar navbar-default navbar-fixed-top"><div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><strong>Neuronal Dynamics</strong></a>
+        </div>
+
+<div class="navbar-collapse collapse" id="navbar-main"><ul class="nav navbar-nav">
+<li><a href="../book.html">About</a></li>
+<li class="active"><a href="index.html">Online book</a></li>
+<li><a href="http://lcn.epfl.ch/~gerstner/NeuronalDynamics-MOOC1.html">Video Lectures</a></li>
+<li><a href="../lectures.html">Teaching Material</a></li>
+</ul></div>
+</div></div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_1line">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.3 </span>Interval distribution and coefficient of variation</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The estimation of interspike interval
+(ISI) distributions from experimental data is a common method to study
+neuronal variability given a certain <span class="ltx_text ltx_font_italic">stationary</span> input. In a typical
+experiment, the spike train of a single neuron (e.g., a neuron in visual
+cortex) is recorded while driven by a constant stimulus. The stimulus might
+be an external input applied to the system (e.g., a visual contrast grating
+moving at constant speed); or it may be an intracellularly applied constant
+driving current. The spike train is analyzed and the distribution of
+intervals <math id="p1.m1" class="ltx_Math" alttext="s_{k}" display="inline"><semantics><msub><mi>s</mi><mi>k</mi></msub><annotation encoding="application/x-tex">s_{k}</annotation></semantics></math> between two subsequent spikes is plotted in a histogram. For
+a sufficiently long spike train, the histogram provides a good estimate of the
+ISI distribution which we denote as <math id="p1.m2" class="ltx_Math" alttext="P_{0}(s)" display="inline"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{0}(s)</annotation></semantics></math>; cf. Fig. <a href="#Ch7.F9" title="Fig. 7.9 ‣ 7.3 Interval distribution and coefficient of variation ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.9</span></a>.
+The interval distribution can be interpreted as a conditional probability density</p>
+<table id="Ch7.E12" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E12.m1" class="ltx_Math" alttext="P_{0}(s)=P(t^{(f)}+s|t^{(f)})" display="block"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><msup><mi>t</mi><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></msup><mo>+</mo><mi>s</mi><mo stretchy="false">|</mo><msup><mi>t</mi><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{0}(s)=P(t^{(f)}+s|t^{(f)})</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.12)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where
+<math id="p1.m3" class="ltx_Math" alttext="\int_{t}^{t+\Delta t}P(t^{\prime}|t^{(f)})\,{\text{d}}t^{\prime}" display="inline"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>t</mi><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msubsup><mi>P</mi><mrow><mo stretchy="false">(</mo><msup><mi>t</mi><mo>′</mo></msup><mo stretchy="false">|</mo><msup><mi>t</mi><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mtext>d</mtext><msup><mi>t</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">\int_{t}^{t+\Delta t}P(t^{\prime}|t^{(f)})\,{\text{d}}t^{\prime}</annotation></semantics></math> is the probability
+that the next spike occurs in the interval
+<math id="p1.m4" class="ltx_Math" alttext="[t,t+\Delta t]" display="inline"><semantics><mrow><mo>[</mo><mrow><mi>t</mi><mo>,</mo><mrow><mi>t</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>]</mo></mrow><annotation encoding="application/x-tex">[t,t+\Delta t]</annotation></semantics></math>
+given
+that the last spike occurred at time <math id="p1.m5" class="ltx_Math" alttext="t^{(f)}" display="inline"><semantics><msup><mi>t</mi><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></msup><annotation encoding="application/x-tex">t^{(f)}</annotation></semantics></math>.</p>
+</div>
+<figure id="Ch7.F9" class="ltx_figure">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left">
+                  <span class="ltx_text ltx_font_bold">A</span>
+                </th>
+<th class="ltx_td ltx_align_left">
+                  <span class="ltx_text ltx_font_bold">B</span>
+                </th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left" colspan="2"><img src="x190.png" id="Ch7.F9.g1" class="ltx_graphics" width="589" height="107" alt=""></td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text ltx_font_bold">Fig.</span> 7.9: </span>
+Stationary interval distribution. <span class="ltx_text ltx_font_bold">A</span>. A neuron driven by a constant
+input produces spikes with variable intervals. <span class="ltx_text ltx_font_bold">B</span>. A histogram of the interspike intervals <math id="Ch7.F9.m3" class="ltx_Math" alttext="s_{1},s_{2},\dots" display="inline"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><msub><mi>s</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">s_{1},s_{2},\dots</annotation></semantics></math> can be
+used to estimate the interval distribution
+<math id="Ch7.F9.m4" class="ltx_Math" alttext="P_{0}(s)" display="inline"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{0}(s)</annotation></semantics></math>.
+</figcaption>
+</figure>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">In order to extract the mean firing
+rate from a stationary interval distribution <math id="p2.m1" class="ltx_Math" alttext="P_{0}(s)" display="inline"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{0}(s)</annotation></semantics></math>,
+we start with the
+definition of the mean interval,</p>
+<table id="Ch7.E13" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E13.m1" class="ltx_Math" alttext="\langle s\rangle=\int_{0}^{\infty}s\,P_{0}(s)\,{\text{d}}s\,." display="block"><semantics><mrow><mrow><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mi>s</mi></mpadded><mo>⁢</mo><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mpadded width="+1.7pt"><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mpadded><mo>⁢</mo><mtext>d</mtext><mo>⁢</mo><mpadded width="+1.7pt"><mi>s</mi></mpadded></mrow></mrow></mrow><mo>.</mo></mrow><annotation encoding="application/x-tex">\langle s\rangle=\int_{0}^{\infty}s\,P_{0}(s)\,{\text{d}}s\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.13)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The mean firing rate
+is the inverse of the mean interval</p>
+<table id="Ch7.E14" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E14.m1" class="ltx_Math" alttext="\nu={1\over\langle s\rangle}=\left[\int_{0}^{\infty}s\,P_{0}(s)\,{\text{d}}s\,%
+\right]^{-1}" display="block"><semantics><mrow><mi>ν</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow></mfrac><mo>=</mo><msup><mrow><mo>[</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mi>s</mi></mpadded><mo>⁢</mo><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mpadded width="+1.7pt"><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mpadded><mo>⁢</mo><mtext>d</mtext><mo>⁢</mo><mpadded width="+1.7pt"><mi>s</mi></mpadded></mrow></mrow><mo>]</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\nu={1\over\langle s\rangle}=\left[\int_{0}^{\infty}s\,P_{0}(s)\,{\text{d}}s\,%
+\right]^{-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.14)</span></td>
+</tr>
+</table>
+</div>
+<section id="SS1" class="ltx_subsection">
+<h1 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">7.3.1 </span>Coefficient of variation <math id="SS1.m1" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi>C</mi><mi>V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math>
+</h1>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Interspike interval distributions <math id="SS1.p1.m1" class="ltx_Math" alttext="P_{0}(s)" display="inline"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">P_{0}(s)</annotation></semantics></math>
+derived from a
+spike train under stationary conditions
+can be broad or sharply peaked.
+To quantify the width of the interval distribution, neuroscientists often
+evaluate the coefficient of variation, short <math id="SS1.p1.m2" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi>C</mi><mi>V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math>, defined as the ratio of
+the standard deviation and the mean. Therefore the square of the <math id="SS1.p1.m3" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi>C</mi><mi>V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math> is 
+</p>
+<table id="Ch7.E15" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E15.m1" class="ltx_Math" alttext="C_{V}^{2}={\langle\Delta s^{2}\rangle\over\langle s\rangle^{2}}\,," display="block"><semantics><mrow><mrow><msubsup><mi>C</mi><mi>V</mi><mn>2</mn></msubsup><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mo>⟨</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow><msup><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow><mn>2</mn></msup></mfrac></mpadded></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">C_{V}^{2}={\langle\Delta s^{2}\rangle\over\langle s\rangle^{2}}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.15)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS1.p1.m4" class="ltx_Math" alttext="\langle s\rangle=\int_{0}^{\infty}sP_{0}(s)\,{\text{d}}s" display="inline"><semantics><mrow><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>s</mi><mo>⁢</mo><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mpadded width="+1.7pt"><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mpadded><mo>⁢</mo><mtext>d</mtext><mo>⁢</mo><mi>s</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle s\rangle=\int_{0}^{\infty}sP_{0}(s)\,{\text{d}}s</annotation></semantics></math> and <math id="SS1.p1.m5" class="ltx_Math" alttext="\langle\Delta s^{2}\rangle=\int_{0}^{\infty}s^{2}\,P_{0}(s)\,{\text{d}}s-%
+\langle s\rangle^{2}" display="inline"><semantics><mrow><mrow><mo>⟨</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>s</mi><mn>2</mn></msup></mpadded><mo>⁢</mo><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mpadded width="+1.7pt"><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mpadded><mo>⁢</mo><mtext>d</mtext><mo>⁢</mo><mi>s</mi></mrow></mrow><mo>-</mo><msup><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\langle\Delta s^{2}\rangle=\int_{0}^{\infty}s^{2}\,P_{0}(s)\,{\text{d}}s-%
+\langle s\rangle^{2}</annotation></semantics></math>. A
+Poisson process produces distributions with <math id="SS1.p1.m6" class="ltx_Math" alttext="C_{V}=1" display="inline"><semantics><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C_{V}=1</annotation></semantics></math>. A value of <math id="SS1.p1.m7" class="ltx_Math" alttext="C_{V}&gt;1" display="inline"><semantics><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C_{V}&gt;1</annotation></semantics></math>, implies that
+a given spike train is less regular than a Poisson process with the same
+firing rate. If <math id="SS1.p1.m8" class="ltx_Math" alttext="C_{V}&lt;1" display="inline"><semantics><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C_{V}&lt;1</annotation></semantics></math>, then the spike train is more regular.
+Most deterministic integrate-and-fire neurons
+fire periodically when driven by a constant
+stimulus and therefore have <math id="SS1.p1.m9" class="ltx_Math" alttext="C_{V}=0" display="inline"><semantics><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">C_{V}=0</annotation></semantics></math>.
+Intrinsically bursting neurons, however, can have <math id="SS1.p1.m10" class="ltx_Math" alttext="C_{V}&gt;1" display="inline"><semantics><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C_{V}&gt;1</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<span class="ltx_inline-block" style="border:1px solid #000000;padding-top:12pt;padding-bottom:12pt;">
+<p class="ltx_p ltx_align_center">
+                <span class="ltx_text ltx_font_bold ltx_font_small">Example: Poisson process with absolute refractoriness</span>
+              </p>
+<p class="ltx_p">
+                <span class="ltx_text ltx_font_small">We study a Poisson neuron with absolute refractory period <math id="SS1.p2.m1" class="ltx_Math" alttext="\Delta^{\rm abs}" display="inline"><semantics><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><annotation encoding="application/x-tex">\Delta^{\rm abs}</annotation></semantics></math>.
+For times since last spike larger than <math id="SS1.p2.m2" class="ltx_Math" alttext="\Delta^{\rm abs}" display="inline"><semantics><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><annotation encoding="application/x-tex">\Delta^{\rm abs}</annotation></semantics></math>, the neuron is supposed to fire
+stochastically with rate <math id="SS1.p2.m3" class="ltx_Math" alttext="r" display="inline"><semantics><mi mathsize="normal" stretchy="false">r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>. The interval distribution
+of a Poisson process with absolute refractoriness
+(Fig. <a href="Ch7.S5.html#Ch7.F10" title="Fig. 7.10 ‣ 7.5.1 Survivor function and hazard ‣ 7.5 Renewal statistics ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.10</span></a>A)
+is given by</span>
+              </p>
+<table id="Ch7.E16" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E16.m1" class="ltx_Math" alttext="P_{0}(s)=\left\{\begin{array}[]{*{2}{c@{\qquad}}c}0\qquad&{\rm for}\qquad&amp;s&lt;%
+\Delta^{\rm abs}\\
+r\,\exp\left[-r\,(s-\Delta^{\rm abs})\right]\qquad&{\rm for}\qquad&amp;s&gt;\Delta^{%
+\rm abs}\end{array}\right.\,;" display="block"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable align="center" columnspacing="0.4em" rowspacing="0.2ex"><mtr><mtd columnalign="center"><mpadded width="+20.0pt"><mn>0</mn></mpadded></mtd><mtd columnalign="center"><mpadded width="+20.0pt"><mi>for</mi></mpadded></mtd><mtd columnalign="center"><mrow><mi>s</mi><mo>&lt;</mo><msup><mi mathvariant="normal">Δ</mi><mi>abs</mi></msup></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>s</mi><mo>-</mo><msup><mi mathvariant="normal">Δ</mi><mi>abs</mi></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mtd><mtd columnalign="center"><mpadded width="+20.0pt"><mi>for</mi></mpadded></mtd><mtd columnalign="center"><mrow><mi>s</mi><mo>&gt;</mo><msup><mi mathvariant="normal">Δ</mi><mi>abs</mi></msup></mrow></mtd></mtr></mtable></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">P_{0}(s)=\left\{\begin{array}[]{*{2}{c@{\qquad}}c}0\qquad&amp;{\rm for}\qquad&amp;s&lt;%
+\Delta^{\rm abs}\\
+r\,\exp\left[-r\,(s-\Delta^{\rm abs})\right]\qquad&amp;{\rm for}\qquad&amp;s&gt;\Delta^{%
+\rm abs}\end{array}\right.\,;</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.16)</span></td>
+</tr>
+</table>
+<p class="ltx_p">
+                <span class="ltx_text ltx_font_small">and has a mean <math id="SS1.p2.m4" class="ltx_Math" alttext="\langle s\rangle=\Delta^{\rm abs}+1/r" display="inline"><semantics><mrow><mrow><mo mathsize="normal" stretchy="false">⟨</mo><mi mathsize="normal" stretchy="false">s</mi><mo mathsize="normal" stretchy="false">⟩</mo></mrow><mo mathsize="normal" stretchy="false">=</mo><mrow><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><mo mathsize="normal" stretchy="false">+</mo><mrow><mn mathsize="normal" stretchy="false">1</mn><mo mathsize="normal" stretchy="false">/</mo><mi mathsize="normal" stretchy="false">r</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle s\rangle=\Delta^{\rm abs}+1/r</annotation></semantics></math>
+and variance <math id="SS1.p2.m5" class="ltx_Math" alttext="\langle\Delta s^{2}\rangle=1/r^{2}" display="inline"><semantics><mrow><mrow><mo mathsize="small" stretchy="false">⟨</mo><mrow><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mo mathsize="small" stretchy="false">⁢</mo><msup><mi mathsize="normal" stretchy="false">s</mi><mn mathsize="normal" stretchy="false">2</mn></msup></mrow><mo mathsize="small" stretchy="false">⟩</mo></mrow><mo mathsize="normal" stretchy="false">=</mo><mrow><mn mathsize="normal" stretchy="false">1</mn><mo mathsize="normal" stretchy="false">/</mo><msup><mi mathsize="normal" stretchy="false">r</mi><mn mathsize="normal" stretchy="false">2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\langle\Delta s^{2}\rangle=1/r^{2}</annotation></semantics></math>. The coefficient of
+variation is therefore</span>
+              </p>
+<table id="Ch7.E17" class="ltx_equation">
+
+<tr class="ltx_equation ltx_align_baseline">
+<td class="ltx_eqn_center_padleft"></td>
+<td class="ltx_align_center"><math id="Ch7.E17.m1" class="ltx_Math" alttext="C_{V}=1-{\Delta^{\rm abs}\over\langle s\rangle}\,." display="block"><semantics><mrow><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mpadded width="+1.7pt"><mfrac><msup><mi mathvariant="normal">Δ</mi><mi>abs</mi></msup><mrow><mo>⟨</mo><mi>s</mi><mo>⟩</mo></mrow></mfrac></mpadded></mrow></mrow><mo>.</mo></mrow><annotation encoding="application/x-tex">C_{V}=1-{\Delta^{\rm abs}\over\langle s\rangle}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(7.17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">
+                <span class="ltx_text ltx_font_small">Let us compare the <math id="SS1.p2.m6" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi mathsize="normal" stretchy="false">C</mi><mi mathsize="normal" stretchy="false">V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math> of Eq. (<a href="#Ch7.E17" title="(7.17) ‣ 7.3.1 Coefficient of variation CV ‣ 7.3 Interval distribution and coefficient of variation ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.17</span></a>) with that of a
+homogeneous Poisson process of the same mean rate <math id="SS1.p2.m7" class="ltx_Math" alttext="\nu=\langle s\rangle^{-1}" display="inline"><semantics><mrow><mi mathsize="normal" stretchy="false">ν</mi><mo mathsize="normal" stretchy="false">=</mo><msup><mrow><mo mathsize="normal" stretchy="false">⟨</mo><mi mathsize="normal" stretchy="false">s</mi><mo mathsize="normal" stretchy="false">⟩</mo></mrow><mrow><mo mathsize="normal" stretchy="false">-</mo><mn mathsize="normal" stretchy="false">1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\nu=\langle s\rangle^{-1}</annotation></semantics></math>. As we have seen, a Poisson process has <math id="SS1.p2.m8" class="ltx_Math" alttext="C_{V}=1" display="inline"><semantics><mrow><msub><mi mathsize="normal" stretchy="false">C</mi><mi mathsize="normal" stretchy="false">V</mi></msub><mo mathsize="normal" stretchy="false">=</mo><mn mathsize="normal" stretchy="false">1</mn></mrow><annotation encoding="application/x-tex">C_{V}=1</annotation></semantics></math>. A refractory
+period <math id="SS1.p2.m9" class="ltx_Math" alttext="\Delta^{\rm abs}&gt;0" display="inline"><semantics><mrow><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><mo mathsize="normal" stretchy="false">&gt;</mo><mn mathsize="normal" stretchy="false">0</mn></mrow><annotation encoding="application/x-tex">\Delta^{\rm abs}&gt;0</annotation></semantics></math> lowers the <math id="SS1.p2.m10" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi mathsize="normal" stretchy="false">C</mi><mi mathsize="normal" stretchy="false">V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math>, because a neuron with absolute
+refractoriness fires more regularly than a Poisson neuron. If we increase
+<math id="SS1.p2.m11" class="ltx_Math" alttext="\Delta^{\rm abs}" display="inline"><semantics><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><annotation encoding="application/x-tex">\Delta^{\rm abs}</annotation></semantics></math>, we must increase the instantaneous rate <math id="SS1.p2.m12" class="ltx_Math" alttext="r" display="inline"><semantics><mi mathsize="normal" stretchy="false">r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> in order to
+keep the same mean rate <math id="SS1.p2.m13" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi mathsize="normal" stretchy="false">ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>. In the limit of <math id="SS1.p2.m14" class="ltx_Math" alttext="\Delta^{\rm abs}\to\langle s\rangle" display="inline"><semantics><mrow><msup><mi mathsize="normal" mathvariant="normal" stretchy="false">Δ</mi><mi mathsize="normal" stretchy="false">abs</mi></msup><mo mathsize="normal" stretchy="false">→</mo><mrow><mo mathsize="normal" stretchy="false">⟨</mo><mi mathsize="normal" stretchy="false">s</mi><mo mathsize="normal" stretchy="false">⟩</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta^{\rm abs}\to\langle s\rangle</annotation></semantics></math>, the <math id="SS1.p2.m15" class="ltx_Math" alttext="C_{V}" display="inline"><semantics><msub><mi mathsize="normal" stretchy="false">C</mi><mi mathsize="normal" stretchy="false">V</mi></msub><annotation encoding="application/x-tex">C_{V}</annotation></semantics></math> approaches zero, since the only possible spike train is
+regular firing with period <math id="SS1.p2.m16" class="ltx_Math" alttext="\langle s\rangle" display="inline"><semantics><mrow><mo mathsize="normal" stretchy="false">⟨</mo><mi mathsize="normal" stretchy="false">s</mi><mo mathsize="normal" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle s\rangle</annotation></semantics></math>.</span>
+              </p>
+</span>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch7.S2.html" title="7.2 Mean Firing Rate ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.2 </span>Mean Firing Rate</span></a><a href="Ch7.S4.html" title="7.4 Autocorrelation function and noise spectrum ‣ Chapter 7 Variability of Spike Trains and Neural Codes ‣ Part II Generalized Integrate-and-Fire Neurons ‣ Neuronal Dynamics – From Single Neurons to Networks
+and Models of Cognition" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.4 </span>Autocorrelation function and noise spectrum</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Mon Sep  8 19:44:32 2014 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</div>
+<div class="footer" style="margin-bottom:0px;padding-top: 15px;"><div class="container small"><p class="muted"><strong>© Cambridge University Press</strong>. This book is in copyright. No reproduction of any part of it may take place without the written permission of Cambridge University Press.</p></div></div>
+</body>
+</html>
